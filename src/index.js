@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import configureStore from './store'
 import Login from './containers/Login';
+import createUser from './containers/CreateUser'
 import PrivateRoute from './containers/PrivateRoute';
 
 const history = createHistory();
