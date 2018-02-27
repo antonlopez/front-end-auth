@@ -12,6 +12,8 @@ const CreateUser = (props) => {
 
     const mapDispatchToProps = (dispatch) => ({
         onSubmit: (username, email, password) => {
+            const log = JSON.stringify({username, email, password})
+            console.log(log);
             dispatch(create(username, email, password))
         }
     });

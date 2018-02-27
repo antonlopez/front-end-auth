@@ -21,6 +21,7 @@ ReactDOM.render((
         <ConnectedRouter history={history}>
             <Switch>
                 <Route exact path="/login/" component={Login} />
+                <Route exact path="/create/" component={createUser} />
                 <PrivateRoute path="/" component={App}/>
             </Switch>
         </ConnectedRouter>

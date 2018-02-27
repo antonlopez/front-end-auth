@@ -19,7 +19,8 @@ export default class CreateUserForm extends Component {
     }
     onSubmit = (event) => {
         event.preventDefault()
-        this.props.onSubmit(this.state.username, this.state.password)
+        const {username, email, password} = this.state
+        this.props.onSubmit(username, email, password)
     }
     render() {
         const errors = this.props.errors || {}
